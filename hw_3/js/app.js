@@ -84,8 +84,8 @@ function openModalScroll() {
     }
 }
 
-// window.addEventListener('scroll', openModalScroll)
-// const modalTimeout = setTimeout(openModal, 5000)
+window.addEventListener('scroll', openModalScroll)
+const modalTimeout = setTimeout(openModal, 5000)
 
 
 // data
