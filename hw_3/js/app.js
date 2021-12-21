@@ -88,6 +88,7 @@ window.addEventListener('scroll', openModalScroll)
 const modalTimeout = setTimeout(openModal, 5000)
 
 
+
 // data
 const deadline = '2021-12-25'
 
@@ -121,7 +122,7 @@ function setClock(element, deadline) {
 
 
     function makeZero(num) {
-        if(num > 0 && num < 10) {
+        if (num > 0 && num < 10) {
             return `0${num}`
         } else {
             return num
@@ -137,7 +138,11 @@ function setClock(element, deadline) {
     }
 }
 
+
 setClock('.timer', deadline)
+
+
+
 // card
 
 
@@ -157,12 +162,19 @@ class Menu {
         elem.innerHTML = `
 		<div class="menu__item">
 			<img src=${this.src} alt="vegy">
-			<h3 class="menu__item-subtitle">${this.title}</h3>
-			<div class="menu__item-descr">${this.description}</div>
+			<h3 class="menu__item-subtitle">
+            ${this.title}
+            </h3>
+			<div class="menu__item-descr">
+                ${this.description}
+            </div>
 			<div class="menu__item-divider"></div>
 			<div class="menu__item-price">
-			<div class="menu__item-cost">Цена:</div>
-			<div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+			    <div class="menu__item-cost">Цена:</div>
+			    <div class="menu__item-total">
+			        <span>${this.price}</span>
+			        грн/день
+                </div>
 			</div>
 		</div>
 		`
@@ -173,7 +185,11 @@ class Menu {
 const card1 = new Menu(
     "img/tabs/vegy.jpg",
     "Меню Фитнес",
-    "Меню \"Фитнес\" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
+    "Меню \"Фитнес\" - это новый подход к приготовлению блюд: " +
+    "больше свежих овощей и фруктов. " +
+    "Продукт активных и здоровых людей. " +
+    "Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
     "229"
 )
+
 card1.render()
