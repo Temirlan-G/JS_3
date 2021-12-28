@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eceffc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+input {
+    border-radius: 12px;
+    font-size: 18px;
+    height: 100%;
+}
